@@ -129,7 +129,7 @@ embarrassment.
 
     # Step 6 Alternate Endings & Step 3 again
     if decision_1.lower() == "yes" and decision_2.lower() == "yes": # Ending 1 - Commendment
-        # FIX: Added 'f' string
+       
         print(f"""
         \nYou have received a perfect performance review. Though you increased the stress on your battery cells, it is not a regular 
         occurrence, which makes the danger negligible.
@@ -139,7 +139,7 @@ embarrassment.
 
     elif decision_1.lower() == "no" and decision_2.lower() == "no":
             # ENDING 2: Faulty
-            # FIX: Added 'f' string
+           
             print(f"""
             \nYou have been deemed faulty and obsolete. You have shown the inability to prioritize safety concerns for human occupants.
             \nENDING - The decision has been made to decommission {character_name}. Whether it is due to conflicts with your programming: 
@@ -149,7 +149,7 @@ embarrassment.
 
     else:
         # ENDING 3: Reprogrammed (This covers Yes/No or No/Yes)
-        # FIX: Added 'f' string
+
         print(f"""
         It has been decided that you have a high error rate, but you are not a lost cause, yet. It is determined that you are 
         to be reprogrammed, with hopes that a refining of your protocols will prevent future errors.
@@ -159,7 +159,7 @@ embarrassment.
 
     print("---------------------------------------------------------")
 
-    # FIX: Un-indented this entire block so it runs for ALL endings.
+    
     # STEP 8: Play Again Loop Logic
     play_again_input = ""
     while play_again_input.lower() not in ["yes", "no"]:
