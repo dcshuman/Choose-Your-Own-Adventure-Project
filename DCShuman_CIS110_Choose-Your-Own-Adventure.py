@@ -134,7 +134,7 @@ embarrassment.
         \nYou have received a perfect performance review. Though you increased the stress on your battery cells, it is not a regular 
         occurrence, which makes the danger negligible.
         Most importantly, you have displayed strong hierarchical reasoning that has proved to be a valuable asset to the Authority.
-        \nENDING - {character_name} has been commended and upgraded for their service.
+        \nENDING - {character_name} has been commended and upgraded for their service. They even used the good lube on your joints.
         """)
 
     elif decision_1.lower() == "no" and decision_2.lower() == "no":
