@@ -56,8 +56,7 @@ while play_again.lower() == "yes":
         if len(design_purpose) == 0:
             print("Error: Designation purpose cannot be empty.")
 
-    # FIX: Un-indented this block so it runs AFTER the loop, not inside it.
-    # FIX: Added 'f' before the quotes so variables work.
+# Intro & step 3
     print("\nInitializing System...\n")
     print(f"System Boot: {os_name} Online.")
     print(f"Unit {character_name}, originally designed for {design_purpose}, is currently active.")
@@ -83,7 +82,7 @@ while play_again.lower() == "yes":
         if decision_1.lower() not in ["yes", "no"]:
             print("Invalid input. Please type 'yes' or 'no'.")
 
-    # Process decision 1
+    # Step 4 - Processing of decision 1
     if decision_1.lower() == "yes":
         print("""
 You have rerouted the conduit from the powerplant to the life support sector.
@@ -100,7 +99,7 @@ life support system has defaulted to backup power. You haven't had enough time t
 You get to work quickly rerouting conduit 132. It takes 5.3 hours to complete the task.
         """)
 
-    # Decision 2 (with validation)
+    # Step 5 - Second decision w/ validation
     decision_2 = ""
 
     while decision_2.lower() not in ["yes", "no"]:
@@ -128,7 +127,7 @@ embarrassment.
 
     print("\nCalculating performance review...\n")
 
-    # Step 6 Alternate Endings
+    # Step 6 Alternate Endings & Step 3 again
     if decision_1.lower() == "yes" and decision_2.lower() == "yes": # Ending 1 - Commendment
         # FIX: Added 'f' string
         print(f"""
